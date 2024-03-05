@@ -1,0 +1,782 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CD5668D12B19222B00D3BE23 /* ArchiveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD5668D02B19222B00D3BE23 /* ArchiveView.swift */; };
+		CD5668D42B1A772000D3BE23 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD5668D32B1A772000D3BE23 /* ViewModel.swift */; };
+		CD5668D72B1BA71100D3BE23 /* Nuke in Frameworks */ = {isa = PBXBuildFile; productRef = CD5668D62B1BA71100D3BE23 /* Nuke */; };
+		CD5668D92B1BA71100D3BE23 /* NukeExtensions in Frameworks */ = {isa = PBXBuildFile; productRef = CD5668D82B1BA71100D3BE23 /* NukeExtensions */; };
+		CD5668DB2B1BA71200D3BE23 /* NukeUI in Frameworks */ = {isa = PBXBuildFile; productRef = CD5668DA2B1BA71200D3BE23 /* NukeUI */; };
+		CD5668DD2B1BA76800D3BE23 /* AreaImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD5668DC2B1BA76800D3BE23 /* AreaImage.swift */; };
+		CD5668DF2B1D4AD400D3BE23 /* EditAreaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD5668DE2B1D4AD400D3BE23 /* EditAreaView.swift */; };
+		CD5668E12B1D4AE900D3BE23 /* EditCategoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD5668E02B1D4AE900D3BE23 /* EditCategoryView.swift */; };
+		CD5668E32B1D4B0400D3BE23 /* EditIngredientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD5668E22B1D4B0400D3BE23 /* EditIngredientView.swift */; };
+		CD921B8E2B068FBB00E31DBE /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD921B8D2B068FBB00E31DBE /* Colors.xcassets */; };
+		CD921B902B069A0500E31DBE /* ColorPalett.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD921B8F2B069A0500E31DBE /* ColorPalett.swift */; };
+		CD921B922B07E3BE00E31DBE /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD921B912B07E3BE00E31DBE /* SearchView.swift */; };
+		CD921B952B07F70900E31DBE /* Category+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD921B932B07F70900E31DBE /* Category+CoreDataClass.swift */; };
+		CD921B962B07F70900E31DBE /* Category+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD921B942B07F70900E31DBE /* Category+CoreDataProperties.swift */; };
+		CD921B982B07F7EE00E31DBE /* CategoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD921B972B07F7EE00E31DBE /* CategoryModel.swift */; };
+		CD921B9B2B0BB36F00E31DBE /* AreaModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD921B9A2B0BB36F00E31DBE /* AreaModel.swift */; };
+		CD921B9D2B0BB38B00E31DBE /* IngredientModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD921B9C2B0BB38B00E31DBE /* IngredientModel.swift */; };
+		CD921B9F2B0BB39E00E31DBE /* MealModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD921B9E2B0BB39E00E31DBE /* MealModel.swift */; };
+		CD921BA32B0FDBC400E31DBE /* RecipeDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD921BA22B0FDBC400E31DBE /* RecipeDetailView.swift */; };
+		CD921BA52B10E8FB00E31DBE /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD921BA42B10E8FB00E31DBE /* SearchBar.swift */; };
+		CDB020F62B053D8E00934128 /* RataouilleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDB020F52B053D8E00934128 /* RataouilleApp.swift */; };
+		CDB020F82B053D8E00934128 /* RecipeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDB020F72B053D8E00934128 /* RecipeView.swift */; };
+		CDB020FA2B053D9400934128 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CDB020F92B053D9400934128 /* Assets.xcassets */; };
+		CDB020FD2B053D9400934128 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CDB020FC2B053D9400934128 /* Preview Assets.xcassets */; };
+		CDB020FF2B053D9400934128 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDB020FE2B053D9400934128 /* Persistence.swift */; };
+		CDB021022B053D9400934128 /* Rataouille.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CDB021002B053D9400934128 /* Rataouille.xcdatamodeld */; };
+		CDB0210C2B053D9400934128 /* RataouilleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDB0210B2B053D9400934128 /* RataouilleTests.swift */; };
+		CDB021162B053D9400934128 /* RataouilleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDB021152B053D9400934128 /* RataouilleUITests.swift */; };
+		CDB021182B053D9400934128 /* RataouilleUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDB021172B053D9400934128 /* RataouilleUITestsLaunchTests.swift */; };
+		CDB0212A2B053FCC00934128 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDB021292B053FCC00934128 /* SettingsView.swift */; };
+		CDB0212E2B06538600934128 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDB0212D2B06538500934128 /* APIClient.swift */; };
+		CDB021322B06662A00934128 /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDB021312B06662A00934128 /* SplashView.swift */; };
+		CDC915DB2B18C7FD0054ED1D /* MealEntity+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDC915D92B18C7FD0054ED1D /* MealEntity+CoreDataClass.swift */; };
+		CDC915DC2B18C7FD0054ED1D /* MealEntity+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDC915DA2B18C7FD0054ED1D /* MealEntity+CoreDataProperties.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CDB021082B053D9400934128 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CDB020EA2B053D8E00934128 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CDB020F12B053D8E00934128;
+			remoteInfo = Rataouille;
+		};
+		CDB021122B053D9400934128 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CDB020EA2B053D8E00934128 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CDB020F12B053D8E00934128;
+			remoteInfo = Rataouille;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CD5668D02B19222B00D3BE23 /* ArchiveView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArchiveView.swift; sourceTree = "<group>"; };
+		CD5668D32B1A772000D3BE23 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		CD5668DC2B1BA76800D3BE23 /* AreaImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AreaImage.swift; sourceTree = "<group>"; };
+		CD5668DE2B1D4AD400D3BE23 /* EditAreaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditAreaView.swift; sourceTree = "<group>"; };
+		CD5668E02B1D4AE900D3BE23 /* EditCategoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditCategoryView.swift; sourceTree = "<group>"; };
+		CD5668E22B1D4B0400D3BE23 /* EditIngredientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditIngredientView.swift; sourceTree = "<group>"; };
+		CD921B8D2B068FBB00E31DBE /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		CD921B8F2B069A0500E31DBE /* ColorPalett.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorPalett.swift; sourceTree = "<group>"; };
+		CD921B912B07E3BE00E31DBE /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
+		CD921B932B07F70900E31DBE /* Category+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Category+CoreDataClass.swift"; path = "Rataouille/Models/CoreData/Category+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
+		CD921B942B07F70900E31DBE /* Category+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Category+CoreDataProperties.swift"; path = "Rataouille/Models/CoreData/Category+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
+		CD921B972B07F7EE00E31DBE /* CategoryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryModel.swift; sourceTree = "<group>"; };
+		CD921B9A2B0BB36F00E31DBE /* AreaModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AreaModel.swift; sourceTree = "<group>"; };
+		CD921B9C2B0BB38B00E31DBE /* IngredientModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IngredientModel.swift; sourceTree = "<group>"; };
+		CD921B9E2B0BB39E00E31DBE /* MealModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealModel.swift; sourceTree = "<group>"; };
+		CD921BA22B0FDBC400E31DBE /* RecipeDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeDetailView.swift; sourceTree = "<group>"; };
+		CD921BA42B10E8FB00E31DBE /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
+		CDB020F22B053D8E00934128 /* Rataouille.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Rataouille.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CDB020F52B053D8E00934128 /* RataouilleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RataouilleApp.swift; sourceTree = "<group>"; };
+		CDB020F72B053D8E00934128 /* RecipeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeView.swift; sourceTree = "<group>"; };
+		CDB020F92B053D9400934128 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CDB020FC2B053D9400934128 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		CDB020FE2B053D9400934128 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		CDB021012B053D9400934128 /* Rataouille.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Rataouille.xcdatamodel; sourceTree = "<group>"; };
+		CDB021072B053D9400934128 /* RataouilleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RataouilleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CDB0210B2B053D9400934128 /* RataouilleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RataouilleTests.swift; sourceTree = "<group>"; };
+		CDB021112B053D9400934128 /* RataouilleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RataouilleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CDB021152B053D9400934128 /* RataouilleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RataouilleUITests.swift; sourceTree = "<group>"; };
+		CDB021172B053D9400934128 /* RataouilleUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RataouilleUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		CDB021292B053FCC00934128 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		CDB0212D2B06538500934128 /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
+		CDB021312B06662A00934128 /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
+		CDC915D92B18C7FD0054ED1D /* MealEntity+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MealEntity+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
+		CDC915DA2B18C7FD0054ED1D /* MealEntity+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MealEntity+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CDB020EF2B053D8E00934128 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD5668DB2B1BA71200D3BE23 /* NukeUI in Frameworks */,
+				CD5668D72B1BA71100D3BE23 /* Nuke in Frameworks */,
+				CD5668D92B1BA71100D3BE23 /* NukeExtensions in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CDB021042B053D9400934128 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CDB0210E2B053D9400934128 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CD5668D22B1A76D000D3BE23 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				CD5668D32B1A772000D3BE23 /* ViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		CD921B992B0BB34C00E31DBE /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				CDC915D92B18C7FD0054ED1D /* MealEntity+CoreDataClass.swift */,
+				CDC915DA2B18C7FD0054ED1D /* MealEntity+CoreDataProperties.swift */,
+				CD921B932B07F70900E31DBE /* Category+CoreDataClass.swift */,
+				CD921B942B07F70900E31DBE /* Category+CoreDataProperties.swift */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		CDB020E92B053D8E00934128 = {
+			isa = PBXGroup;
+			children = (
+				CDB020F42B053D8E00934128 /* Rataouille */,
+				CDB0210A2B053D9400934128 /* RataouilleTests */,
+				CDB021142B053D9400934128 /* RataouilleUITests */,
+				CDB020F32B053D8E00934128 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CDB020F32B053D8E00934128 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CDB020F22B053D8E00934128 /* Rataouille.app */,
+				CDB021072B053D9400934128 /* RataouilleTests.xctest */,
+				CDB021112B053D9400934128 /* RataouilleUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CDB020F42B053D8E00934128 /* Rataouille */ = {
+			isa = PBXGroup;
+			children = (
+				CDB020F52B053D8E00934128 /* RataouilleApp.swift */,
+				CDB021252B053F5000934128 /* APIClient */,
+				CD5668D22B1A76D000D3BE23 /* ViewModel */,
+				CDB021272B053F7900934128 /* UI */,
+				CDB021262B053F7000934128 /* Models */,
+				CDB021242B053F3900934128 /* Views */,
+				CDB020F92B053D9400934128 /* Assets.xcassets */,
+				CDB020FE2B053D9400934128 /* Persistence.swift */,
+				CDB021002B053D9400934128 /* Rataouille.xcdatamodeld */,
+				CD921B8D2B068FBB00E31DBE /* Colors.xcassets */,
+				CDB020FB2B053D9400934128 /* Preview Content */,
+			);
+			path = Rataouille;
+			sourceTree = "<group>";
+		};
+		CDB020FB2B053D9400934128 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				CDB020FC2B053D9400934128 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		CDB0210A2B053D9400934128 /* RataouilleTests */ = {
+			isa = PBXGroup;
+			children = (
+				CDB0210B2B053D9400934128 /* RataouilleTests.swift */,
+			);
+			path = RataouilleTests;
+			sourceTree = "<group>";
+		};
+		CDB021142B053D9400934128 /* RataouilleUITests */ = {
+			isa = PBXGroup;
+			children = (
+				CDB021152B053D9400934128 /* RataouilleUITests.swift */,
+				CDB021172B053D9400934128 /* RataouilleUITestsLaunchTests.swift */,
+			);
+			path = RataouilleUITests;
+			sourceTree = "<group>";
+		};
+		CDB021242B053F3900934128 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CDB021312B06662A00934128 /* SplashView.swift */,
+				CDB020F72B053D8E00934128 /* RecipeView.swift */,
+				CD921B912B07E3BE00E31DBE /* SearchView.swift */,
+				CDB021292B053FCC00934128 /* SettingsView.swift */,
+				CD921BA22B0FDBC400E31DBE /* RecipeDetailView.swift */,
+				CD5668D02B19222B00D3BE23 /* ArchiveView.swift */,
+				CD5668E22B1D4B0400D3BE23 /* EditIngredientView.swift */,
+				CD5668DE2B1D4AD400D3BE23 /* EditAreaView.swift */,
+				CD5668E02B1D4AE900D3BE23 /* EditCategoryView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		CDB021252B053F5000934128 /* APIClient */ = {
+			isa = PBXGroup;
+			children = (
+				CDB0212D2B06538500934128 /* APIClient.swift */,
+			);
+			path = APIClient;
+			sourceTree = "<group>";
+		};
+		CDB021262B053F7000934128 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				CD921B992B0BB34C00E31DBE /* CoreData */,
+				CD921B972B07F7EE00E31DBE /* CategoryModel.swift */,
+				CD921B9E2B0BB39E00E31DBE /* MealModel.swift */,
+				CD921B9C2B0BB38B00E31DBE /* IngredientModel.swift */,
+				CD921B9A2B0BB36F00E31DBE /* AreaModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		CDB021272B053F7900934128 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				CD921B8F2B069A0500E31DBE /* ColorPalett.swift */,
+				CD921BA42B10E8FB00E31DBE /* SearchBar.swift */,
+				CD5668DC2B1BA76800D3BE23 /* AreaImage.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CDB020F12B053D8E00934128 /* Rataouille */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CDB0211B2B053D9400934128 /* Build configuration list for PBXNativeTarget "Rataouille" */;
+			buildPhases = (
+				CDB020EE2B053D8E00934128 /* Sources */,
+				CDB020EF2B053D8E00934128 /* Frameworks */,
+				CDB020F02B053D8E00934128 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Rataouille;
+			packageProductDependencies = (
+				CD5668D62B1BA71100D3BE23 /* Nuke */,
+				CD5668D82B1BA71100D3BE23 /* NukeExtensions */,
+				CD5668DA2B1BA71200D3BE23 /* NukeUI */,
+			);
+			productName = Rataouille;
+			productReference = CDB020F22B053D8E00934128 /* Rataouille.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CDB021062B053D9400934128 /* RataouilleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CDB0211E2B053D9400934128 /* Build configuration list for PBXNativeTarget "RataouilleTests" */;
+			buildPhases = (
+				CDB021032B053D9400934128 /* Sources */,
+				CDB021042B053D9400934128 /* Frameworks */,
+				CDB021052B053D9400934128 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CDB021092B053D9400934128 /* PBXTargetDependency */,
+			);
+			name = RataouilleTests;
+			productName = RataouilleTests;
+			productReference = CDB021072B053D9400934128 /* RataouilleTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		CDB021102B053D9400934128 /* RataouilleUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CDB021212B053D9400934128 /* Build configuration list for PBXNativeTarget "RataouilleUITests" */;
+			buildPhases = (
+				CDB0210D2B053D9400934128 /* Sources */,
+				CDB0210E2B053D9400934128 /* Frameworks */,
+				CDB0210F2B053D9400934128 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CDB021132B053D9400934128 /* PBXTargetDependency */,
+			);
+			name = RataouilleUITests;
+			productName = RataouilleUITests;
+			productReference = CDB021112B053D9400934128 /* RataouilleUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CDB020EA2B053D8E00934128 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					CDB020F12B053D8E00934128 = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
+					CDB021062B053D9400934128 = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = CDB020F12B053D8E00934128;
+					};
+					CDB021102B053D9400934128 = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = CDB020F12B053D8E00934128;
+					};
+				};
+			};
+			buildConfigurationList = CDB020ED2B053D8E00934128 /* Build configuration list for PBXProject "Rataouille" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CDB020E92B053D8E00934128;
+			packageReferences = (
+				CD5668D52B1BA71100D3BE23 /* XCRemoteSwiftPackageReference "Nuke" */,
+			);
+			productRefGroup = CDB020F32B053D8E00934128 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CDB020F12B053D8E00934128 /* Rataouille */,
+				CDB021062B053D9400934128 /* RataouilleTests */,
+				CDB021102B053D9400934128 /* RataouilleUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CDB020F02B053D8E00934128 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD921B8E2B068FBB00E31DBE /* Colors.xcassets in Resources */,
+				CDB020FD2B053D9400934128 /* Preview Assets.xcassets in Resources */,
+				CDB020FA2B053D9400934128 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CDB021052B053D9400934128 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CDB0210F2B053D9400934128 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CDB020EE2B053D8E00934128 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD921B9D2B0BB38B00E31DBE /* IngredientModel.swift in Sources */,
+				CD921B9B2B0BB36F00E31DBE /* AreaModel.swift in Sources */,
+				CD5668E32B1D4B0400D3BE23 /* EditIngredientView.swift in Sources */,
+				CD921B922B07E3BE00E31DBE /* SearchView.swift in Sources */,
+				CD921B982B07F7EE00E31DBE /* CategoryModel.swift in Sources */,
+				CD5668DD2B1BA76800D3BE23 /* AreaImage.swift in Sources */,
+				CDB0212A2B053FCC00934128 /* SettingsView.swift in Sources */,
+				CD921B952B07F70900E31DBE /* Category+CoreDataClass.swift in Sources */,
+				CDB0212E2B06538600934128 /* APIClient.swift in Sources */,
+				CDB020FF2B053D9400934128 /* Persistence.swift in Sources */,
+				CDB021022B053D9400934128 /* Rataouille.xcdatamodeld in Sources */,
+				CD5668DF2B1D4AD400D3BE23 /* EditAreaView.swift in Sources */,
+				CDB020F82B053D8E00934128 /* RecipeView.swift in Sources */,
+				CD921B9F2B0BB39E00E31DBE /* MealModel.swift in Sources */,
+				CDC915DC2B18C7FD0054ED1D /* MealEntity+CoreDataProperties.swift in Sources */,
+				CD921B962B07F70900E31DBE /* Category+CoreDataProperties.swift in Sources */,
+				CD5668D42B1A772000D3BE23 /* ViewModel.swift in Sources */,
+				CD5668E12B1D4AE900D3BE23 /* EditCategoryView.swift in Sources */,
+				CD921BA32B0FDBC400E31DBE /* RecipeDetailView.swift in Sources */,
+				CDC915DB2B18C7FD0054ED1D /* MealEntity+CoreDataClass.swift in Sources */,
+				CDB020F62B053D8E00934128 /* RataouilleApp.swift in Sources */,
+				CD921B902B069A0500E31DBE /* ColorPalett.swift in Sources */,
+				CD5668D12B19222B00D3BE23 /* ArchiveView.swift in Sources */,
+				CD921BA52B10E8FB00E31DBE /* SearchBar.swift in Sources */,
+				CDB021322B06662A00934128 /* SplashView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CDB021032B053D9400934128 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CDB0210C2B053D9400934128 /* RataouilleTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CDB0210D2B053D9400934128 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CDB021182B053D9400934128 /* RataouilleUITestsLaunchTests.swift in Sources */,
+				CDB021162B053D9400934128 /* RataouilleUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CDB021092B053D9400934128 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CDB020F12B053D8E00934128 /* Rataouille */;
+			targetProxy = CDB021082B053D9400934128 /* PBXContainerItemProxy */;
+		};
+		CDB021132B053D9400934128 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CDB020F12B053D8E00934128 /* Rataouille */;
+			targetProxy = CDB021122B053D9400934128 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		CDB021192B053D9400934128 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CDB0211A2B053D9400934128 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CDB0211C2B053D9400934128 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Rataouille/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.t.hk.Rataouille;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CDB0211D2B053D9400934128 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Rataouille/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.t.hk.Rataouille;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		CDB0211F2B053D9400934128 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.t.hk.RataouilleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Rataouille.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Rataouille";
+			};
+			name = Debug;
+		};
+		CDB021202B053D9400934128 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.t.hk.RataouilleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Rataouille.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Rataouille";
+			};
+			name = Release;
+		};
+		CDB021222B053D9400934128 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.t.hk.RataouilleUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Rataouille;
+			};
+			name = Debug;
+		};
+		CDB021232B053D9400934128 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.t.hk.RataouilleUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Rataouille;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CDB020ED2B053D8E00934128 /* Build configuration list for PBXProject "Rataouille" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CDB021192B053D9400934128 /* Debug */,
+				CDB0211A2B053D9400934128 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CDB0211B2B053D9400934128 /* Build configuration list for PBXNativeTarget "Rataouille" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CDB0211C2B053D9400934128 /* Debug */,
+				CDB0211D2B053D9400934128 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CDB0211E2B053D9400934128 /* Build configuration list for PBXNativeTarget "RataouilleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CDB0211F2B053D9400934128 /* Debug */,
+				CDB021202B053D9400934128 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CDB021212B053D9400934128 /* Build configuration list for PBXNativeTarget "RataouilleUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CDB021222B053D9400934128 /* Debug */,
+				CDB021232B053D9400934128 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		CD5668D52B1BA71100D3BE23 /* XCRemoteSwiftPackageReference "Nuke" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/kean/Nuke";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 12.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		CD5668D62B1BA71100D3BE23 /* Nuke */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CD5668D52B1BA71100D3BE23 /* XCRemoteSwiftPackageReference "Nuke" */;
+			productName = Nuke;
+		};
+		CD5668D82B1BA71100D3BE23 /* NukeExtensions */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CD5668D52B1BA71100D3BE23 /* XCRemoteSwiftPackageReference "Nuke" */;
+			productName = NukeExtensions;
+		};
+		CD5668DA2B1BA71200D3BE23 /* NukeUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CD5668D52B1BA71100D3BE23 /* XCRemoteSwiftPackageReference "Nuke" */;
+			productName = NukeUI;
+		};
+/* End XCSwiftPackageProductDependency section */
+
+/* Begin XCVersionGroup section */
+		CDB021002B053D9400934128 /* Rataouille.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				CDB021012B053D9400934128 /* Rataouille.xcdatamodel */,
+			);
+			currentVersion = CDB021012B053D9400934128 /* Rataouille.xcdatamodel */;
+			path = Rataouille.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = CDB020EA2B053D8E00934128 /* Project object */;
+}

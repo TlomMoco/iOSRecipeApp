@@ -1,0 +1,23 @@
+{
+  "images" : [
+    {
+      "filename" : "hollywood-ratatouille-film-pixar-the-walt-disney-company-rat-952da82a45500f6635e032780a119c45.png",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "filename" : "hollywood-ratatouille-film-pixar-the-walt-disney-company-rat-952da82a45500f6635e032780a119c45 1.png",
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "filename" : "hollywood-ratatouille-film-pixar-the-walt-disney-company-rat-952da82a45500f6635e032780a119c45 2.png",
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
